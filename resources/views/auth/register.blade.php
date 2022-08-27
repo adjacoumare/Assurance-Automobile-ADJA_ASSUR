@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+    form{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn{
+    margin-left: 40%;
+    color: white;
+    font-weight: bold;
+  }
+</style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

@@ -42,7 +42,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="home">
+                <a class="nav-link" href="{{ url('/home')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Tableau de bord</span></a>
             </li>
@@ -177,7 +177,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">COUMARE Djeneba</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->prenom }}  {{ Auth::user()->nom }}</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/adja.jpg">
                             </a>
@@ -211,7 +211,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Djeneba COUMARE 2022</span>
+                        <span>Copyright &copy; Djeneba COUMARE Developpeuse-Web Simplon-Mali 2022</span>
                     </div>
                 </div>
             </footer>
@@ -242,7 +242,15 @@
                 <div class="modal-body">Cliquez sur "Déconnecter" pour arrêter la session en cours...</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
-                    <a class="btn btn-primary" href="{{url('login')}}">Déconnecter</a>
+                   <button class="btn btn-primary" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        {{ __('Deconnecter') }}
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                   </button>
+                   
                 </div>
             </div>
         </div>

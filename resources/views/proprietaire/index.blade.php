@@ -66,5 +66,6 @@
         @endforeach
     </tbody>
   </table>
+  <div class="d-flex justify-content-end mb-4"><a type="button" class="btn btn-primary" href="{{('/home')}}">RETOUR</a></div>
 <div>
 @endsection

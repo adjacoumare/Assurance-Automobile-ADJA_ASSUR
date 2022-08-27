@@ -30,18 +30,18 @@
   @endif
   <h2>LISTE DES VEHICULES</h2>
   <div class="d-flex justify-content-end mb-4"><a type="button" class="btn btn-primary" href="{{('/vehicules/create')}}">AJOUTER UN VEHICULE</a></div>
-  <table class="table table-bordered table-hover" style="color:black;">
+  <table class="table table-bordered table-hover " style="color:black; width:80%;">
 
     <thead>
         <tr>
           <td>Id</td>
-          <td>Immatriculation</td>
+          <td>Immat</td>
           <td>Marque</td>
           <td>Modele</td>
           <td>Couleur</td>
           <td>Carburant</td>
           <td>Type</td>
-          <td>Nom_proprietaire</td>
+          <td>Nom_pro</td>
           <td colspan="3">Actions</td>
         </tr>
     </thead>
@@ -58,7 +58,7 @@
             <td>{{$vehicule->type}}</td>
             <td>{{$vehicule->proprietaire->nom}} {{$vehicule->proprietaire->prenom}}</td>
             <td><a href="{{ route('vehicules.edit', $vehicule->id)}}" class="btn btn-primary">Modifier</a></td>
-            <!-- <td><a href="{{ route('vehicules.show', $vehicule->id)}}" class="btn btn-info">Details</a></td> -->
+            <td><a href="{{ route('vehicules.show', $vehicule->id)}}" class="btn btn-info">Details</a></td>
             <td>
                 <form action="{{ route('vehicules.destroy', $vehicule->id)}}" method="post">
                   @csrf
@@ -70,6 +70,8 @@
         @endforeach
     </tbody>
   </table>
+  <div class="d-flex justify-content-end mb-4"><a type="button" class="btn btn-primary" href="{{('/home')}}">RETOUR</a></div>
 <div>
 @endsection
+
 
