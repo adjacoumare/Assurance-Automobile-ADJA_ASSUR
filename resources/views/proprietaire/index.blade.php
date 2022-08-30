@@ -37,8 +37,8 @@
           <td>Id</td>
           <td>Nom</td>
           <td>Prenom</td>
-          <td>Adresse</td>
-          <td>Telephone</td>
+          <!-- <td>Adresse</td>
+          <td>Telephone</td> -->
           <td>Fonction</td>
           <td colspan="3">Actions</td>
         </tr>
@@ -50,8 +50,8 @@
           <td>{{$proprietaire->id}}</td>
           <td>{{$proprietaire->nom}}</td>
           <td>{{$proprietaire->prenom}}</td>
-          <td>{{$proprietaire->adresse}}</td>
-          <td>{{$proprietaire->telephone}}</td>
+          <!-- <td>{{$proprietaire->adresse}}</td>
+          <td>{{$proprietaire->telephone}}</td> -->
           <td>{{$proprietaire->fonction}}</td>
           <td><a href="{{ route('proprietaires.edit', $proprietaire->id)}}" class="btn btn-primary">Modifier</a></td>
           <td><a href="{{ route('proprietaires.show', $proprietaire->id)}}" class="btn btn-info">Details</a></td>

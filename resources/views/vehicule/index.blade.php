@@ -19,6 +19,15 @@
     font-weight: bold;
   } 
 
+  #btn1{
+    margin-right: 15%;
+    margin-top: 2%;
+  }
+
+  #btn2{
+    margin-right: 15%;
+  }
+
 </style>
 
 <div class="uper">
@@ -29,19 +38,18 @@
     </div><br />
   @endif
   <h2>LISTE DES VEHICULES</h2>
-  <div class="d-flex justify-content-end mb-4"><a type="button" class="btn btn-primary" href="{{('/vehicules/create')}}">AJOUTER UN VEHICULE</a></div>
+  <div class="d-flex justify-content-end mb-4"><a type="button" class="btn btn-primary" href="{{('/vehicules/create')}}" id="btn1">AJOUTER UN VEHICULE</a></div>
   <table class="table table-bordered table-hover " style="color:black; width:80%;">
-
     <thead>
         <tr>
           <td>Id</td>
-          <td>Immat</td>
+          <td>immatriculation</td>
           <td>Marque</td>
           <td>Modele</td>
-          <td>Couleur</td>
+          <!-- <td>Couleur</td>
           <td>Carburant</td>
-          <td>Type</td>
-          <td>Nom_pro</td>
+          <td>Type</td> -->
+          <td>Nom_proprietaire</td>
           <td colspan="3">Actions</td>
         </tr>
     </thead>
@@ -53,9 +61,9 @@
             <td>{{$vehicule->immatriculation}}</td>
             <td>{{$vehicule->marque}}</td>
             <td>{{$vehicule->modele}}</td>
-            <td>{{$vehicule->couleur}}</td>
+            <!-- <td>{{$vehicule->couleur}}</td>
             <td>{{$vehicule->carburant}}</td>
-            <td>{{$vehicule->type}}</td>
+            <td>{{$vehicule->type}}</td> -->
             <td>{{$vehicule->proprietaire->nom}} {{$vehicule->proprietaire->prenom}}</td>
             <td><a href="{{ route('vehicules.edit', $vehicule->id)}}" class="btn btn-primary">Modifier</a></td>
             <td><a href="{{ route('vehicules.show', $vehicule->id)}}" class="btn btn-info">Details</a></td>
@@ -70,7 +78,7 @@
         @endforeach
     </tbody>
   </table>
-  <div class="d-flex justify-content-end mb-4"><a type="button" class="btn btn-primary" href="{{('/home')}}">RETOUR</a></div>
+  <div class="d-flex justify-content-end mb-4"><a type="button" class="btn btn-primary" href="{{('/home')}}" id="btn2">RETOUR</a></div>
 <div>
 @endsection
 

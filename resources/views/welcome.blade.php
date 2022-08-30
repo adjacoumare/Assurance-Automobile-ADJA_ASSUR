@@ -84,7 +84,7 @@
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="container">
             <h2>BIENVENUE chez <span>ADJA ASSUR</span></h2>
-            <p>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</p>
+            <p><strong>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</strong></p>
             <a href="#apropos" class="btn-get-started scrollto">Lire la suite</a>
           </div>
         </div>
@@ -93,7 +93,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="container">
           <h2>BIENVENUE chez <span>ADJA ASSUR</span></h2>
-            <p>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</p>
+            <p><strong>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</strong></p>
             <a href="#apropos" class="btn-get-started scrollto">Lire la suite</a>
           </div>
         </div>
@@ -102,7 +102,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="container">
           <h2>BIENVENUE chez <span>ADJA ASSUR</span></h2>
-            <p>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</p>
+            <p><strong>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</strong></p>
             <a href="#apropos" class="btn-get-started scrollto">Lire la suite</a>
           </div>
         </div>
@@ -111,7 +111,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-4.jpg)">
           <div class="container">
           <h2>BIENVENUE chez <span>ADJA ASSUR</span></h2>
-            <p>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</p>
+            <p><strong>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</strong></p>
             <a href="#apropos" class="btn-get-started scrollto">Lire la suite</a>
           </div>
         </div>
@@ -120,7 +120,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-5.jpg)">
           <div class="container">
           <h2>BIENVENUE chez <span>ADJA ASSUR</span></h2>
-            <p>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</p>
+            <p><strong>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</strong></p>
             <a href="#apropos" class="btn-get-started scrollto">Lire la suite</a>
           </div>
         </div>
@@ -130,7 +130,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-6.jpg)">
           <div class="container">
           <h2>BIENVENUE chez <span>ADJA ASSUR</span></h2>
-            <p>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</p>
+            <p><strong>ADJA ASSUR est une application de gestion d'assurance automobile qui permet aux assureurs de digitaliser leurs tâches et de faciliter la collecte et la sauvegarde des données.</strong></p>
             <a href="#apropos" class="btn-get-started scrollto">Lire la suite</a>
           </div>
         </div>

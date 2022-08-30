@@ -27,6 +27,7 @@
       {{ session()->get('success') }}  
     </div><br />
   @endif
+  <h2>LISTE DES PAIEMENTS EFFECTUER</h2>
   <div class="d-flex justify-content-end mb-3"><a type="button" class="btn btn-primary" href="{{('/paiements/create')}}">Effectuer un paiement</a></div>
   <table class="table table-bordered table-hover" style="color:black;">
 
