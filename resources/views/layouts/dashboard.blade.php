@@ -20,6 +20,15 @@
     <!-- Custom styles for this template-->
     <link href="{{asset ('css/sb-admin-2.min.css')}}" rel="stylesheet">
 
+    <!-- LIENS BOOTSTRAP -->
+    <link href="{{ asset('js/bootstrap.bundle.js') }}" rel="stylesheet">
+    <link href="{{ asset('js/bootstrap.bundle.min.js') }}" rel="stylesheet">
+    <link href="{{ asset('js/jquery-3.5.1.min.js') }}" rel="stylesheet">
+    <link href="{{ asset('js/jquery-3.6.0.min.js') }}" rel="stylesheet">
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -32,10 +41,10 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-    <div class="sidebar-brand-icon rotate-n-15"></div>
-    <img src="{{asset('/img/AdjaAssur.png')}}" alt="" style="width: 30%;">
-    <!-- <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div> -->
-        </a>
+                <div class="sidebar-brand-icon rotate-n-15"></div>
+                <img src="{{asset('/img/AdjaAssur.png')}}" alt="" style="width: 30%;">
+                <!-- <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div> -->
+            </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -44,7 +53,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/home')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Tableau de bord</span></a>
+                    <span>Tableau de bord</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -73,45 +83,41 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-        aria-expanded="true" aria-controls="collapseUtilities">
-        <i class="fa fa-car" aria-hidden="true"></i>
-        <span>VEHICULE</span>
-    </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-        data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Gestion des vehicules</h6>
-            <a class="collapse-item" href="{{url('/vehicules/create')}}">Ajouter un vehicule</a>
-            <a class="collapse-item" href="{{url('/vehicules')}}">Liste des vehicules</a>
-        </div>
-    </div>
-
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-            aria-expanded="true" aria-controls="collapsePages">
-            <i class="fa fa-credit-card" aria-hidden="true"></i>
-            <span>PAIEMENT</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Gestion des Paiements</h6>
-                <a class="collapse-item" href="{{url('/paiements/create')}}">Effectuer un paiement</a>
-                <a class="collapse-item" href="{{url('/paiements')}}">Liste des paiements</a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fa fa-car" aria-hidden="true"></i>
+                    <span>VEHICULE</span>
+                </a>
+            </li>
+            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Gestion des vehicules</h6>
+                    <a class="collapse-item" href="{{url('/vehicules/create')}}">Ajouter un vehicule</a>
+                    <a class="collapse-item" href="{{url('/vehicules')}}">Liste des vehicules</a>
+                </div>
             </div>
-        </div>
-    </li>
 
 
-</li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <span>PAIEMENT</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Gestion des Paiements</h6>
+                        <a class="collapse-item" href="{{url('/paiements/create')}}">Effectuer un paiement</a>
+                        <a class="collapse-item" href="{{url('/paiements')}}">Liste des paiements</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
- 
-
         </ul>
         <!-- End of Sidebar -->
 
@@ -142,8 +148,8 @@
                             </div>
                         </div>
                     </form> -->
-                        <h4 style="text-transform:uppercase; font-weight : bold; color:black; margin-left:6%">
-                        APPLICATION DE GESTION D'ASSURANCE AUTOMOBILE</h4>
+                        <h4 style="text-transform:uppercase; font-weight : bold; color:black; margin-left:8%">
+                                APPLICATION DE GESTION D'ASSURANCE AUTOMOBILE</h4>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
