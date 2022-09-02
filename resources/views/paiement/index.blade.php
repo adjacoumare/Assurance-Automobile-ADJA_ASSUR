@@ -27,7 +27,7 @@
       {{ session()->get('success') }}  
     </div><br />
   @endif
-  <h2>LISTE DES PAIEMENTS EFFECTUER</h2>
+  <h2>LISTE DES PAIEMENTS EFFECTUES</h2>
   <div class="d-flex justify-content-end mb-3"><a type="button" class="btn btn-primary" href="{{('/paiements/create')}}">Effectuer un paiement</a></div>
   <table class="table table-bordered table-hover" style="color:black;">
 
@@ -37,7 +37,7 @@
           <td>Montant</td>
           <td>Date</td>
           <td>Nom_proprietaire</td>
-          <td colspan="3">Actions</td>
+          <td colspan="2">Actions</td>
         </tr>
     </thead>
 
@@ -49,7 +49,7 @@
             <td>{{$paiement->date}}</td>
             <td>{{$paiement->proprietaire->nom}} {{$paiement->proprietaire->prenom}}</td>
             <td><a href="{{ route('paiements.edit', $paiement->id)}}" class="btn btn-primary">Modifier</a></td>
-            <td><a href="{{ route('paiements.show', $paiement->id)}}" class="btn btn-info">Details</a></td>
+            <!-- <td><a href="{{ route('paiements.show', $paiement->id)}}" class="btn btn-info">Details</a></td> -->
             <td>
                 <form action="{{ route('paiements.destroy', $paiement->id)}}" method="post">
                   @csrf

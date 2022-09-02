@@ -74,7 +74,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Gestion des assurés</h6>
+                        <h6 class="collapse-header">Gestion des proprietaires</h6>
                         <a class="collapse-item" href="{{url('/proprietaires/create')}}">Ajouter un proprietaire</a>
                         <a class="collapse-item" href="{{url('/proprietaires')}}">Liste des proprietaires</a>
                     </div>
@@ -88,16 +88,14 @@
                     <i class="fa fa-car" aria-hidden="true"></i>
                     <span>VEHICULE</span>
                 </a>
-            </li>
-            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Gestion des vehicules</h6>
-                    <a class="collapse-item" href="{{url('/vehicules/create')}}">Ajouter un vehicule</a>
-                    <a class="collapse-item" href="{{url('/vehicules')}}">Liste des vehicules</a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Gestion des vehicules</h6>
+                        <a class="collapse-item" href="{{url('/vehicules/create')}}">Ajouter un vehicule</a>
+                        <a class="collapse-item" href="{{url('/vehicules')}}">Liste des vehicules</a>
+                    </div>
                 </div>
-            </div>
-
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
