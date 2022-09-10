@@ -62,7 +62,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto " href="#hero">Accueil</a></li>
-          <li><a class="nav-link scrollto" href="#apropos">A propos</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#apropos">A propos</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="btn-default" href="{{ route('login') }}">Connexion</a></li>
         </ul>
@@ -207,7 +207,7 @@
     <!-- End Cta Section -->
 
     <!-- ======= About Us Section ======= -->
-    <section id="apropos" class="about">
+    <!-- <section id="apropos" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -235,7 +235,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End About Us Section -->
 
     <!-- ======= Counts Section ======= -->
@@ -578,12 +578,13 @@
             </div> -->
             <!-- End testimonial item -->
 
-          </div>
+          <!-- </div>
           <div class="swiper-pagination"></div>
-        </div>
+        </div> -->
 
-      </div>
-    </section><!-- End Testimonials Section -->
+      <!-- </div>
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Doctors Section ======= -->
     <!-- <section id="doctors" class="doctors section-bg">
@@ -675,7 +676,7 @@
     <!-- End Doctors Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <!-- <section id="gallery" class="gallery">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -696,7 +697,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End Gallery Section -->
 
     <!-- ======= Pricing Section ======= -->
@@ -779,10 +780,10 @@
             </div>
           </div> -->
 
-        </div>
+        <!-- </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questioins Section ======= -->
@@ -956,7 +957,7 @@
             <h4>Liens utiles</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Accueil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#apropos">A propos </a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#apropos">A propos </a></li> -->
               <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
             </ul>
           </div>

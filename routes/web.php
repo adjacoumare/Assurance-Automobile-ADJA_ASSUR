@@ -26,3 +26,10 @@ Route::resource('proprietaires', 'ProprietaireController');
 Route::resource('/vehicules', 'VehiculeController');
 Route::resource('/paiements', 'PaiementController');
 
+
+Route::get('/generate-pdf',[App\Http\Controllers\PDFController::class , 'generatePDF']);  
+
+
+Route::get('/myPDF', [App\Http\Controllers\PDFController::class, 'generatePDF'])->name('myPDF');
+
+

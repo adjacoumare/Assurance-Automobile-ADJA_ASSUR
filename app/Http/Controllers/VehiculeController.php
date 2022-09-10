@@ -54,7 +54,7 @@ class VehiculeController extends Controller
     
         $vehicule = Vehicule::create($validatedData);
     
-        return redirect('/vehicules')->with('success', 'Vehicule créer avec succèss');
+        return redirect('/vehicules')->with('success', 'Vehicule ajouter avec succèss');
     }
 
     /**
@@ -118,5 +118,13 @@ class VehiculeController extends Controller
         $vehicule->delete();
     
         return redirect('/vehicules')->with('success', 'Vehicule supprimer avec succèss');
+    }
+
+    
+    public function generateAttestation($id)
+    {
+        $vehicule = Vehicule::findOrFail($id);
+
+        return view('vehicule.attestation', compact('vehicule'));
     }
 }

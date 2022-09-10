@@ -72,7 +72,7 @@ class ProprietaireController extends Controller
     {
         $proprietaire = Proprietaire::findOrFail($id);
 
-         return view('proprietaire.edit', compact('proprietaire'));
+        return view('proprietaire.edit', compact('proprietaire'));
     }
 
     /**

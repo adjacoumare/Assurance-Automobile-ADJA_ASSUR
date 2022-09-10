@@ -41,7 +41,7 @@
           <td>Carburant</td>
           <td>Type</td> -->
           <td>Nom_proprietaire</td>
-          <td colspan="3">Actions</td>
+          <td colspan="4">Actions</td>
         </tr>
     </thead>
 
@@ -63,6 +63,7 @@
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-danger" type="submit">Supprimer</button>
+                  <td><a href="{{ ('/myPDF')}}" class="btn btn-secondary">Attestation</a></td>
                 </form>
             </td>
         </tr>

@@ -8,7 +8,7 @@
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary">
                     <div class="card-header py-3 text-white bg-primary border-primary">
-                        <h4 class="my-0 fw-normal">Immatriculation: {{$vehicules->immatriculation}}</h4>
+                        <h4 class="my-0 fw-normal">Détails</h4>
                     </div>
                     <div class="card-body" style="list-style: none;">
                         <ul class="list-unstyled mt-3 mb-4">
@@ -17,7 +17,7 @@
                         <li>Couleur: {{$vehicules->couleur}}</li>
                         <li>Carburant: {{$vehicules->carburant}}</li>
                         <li>Type: {{$vehicules->type}}</li>
-                        <li>Nom_proprietaire: {{$vehicules->nom_proprietaire}}</li>
+                        <li>Nom_proprietaire: {{$vehicules->proprietaire->nom}} {{$vehicules->proprietaire->prenom}}</li>
                         </ul>
                     </div>
                 </div>

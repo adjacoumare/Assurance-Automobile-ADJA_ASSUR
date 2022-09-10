@@ -28,6 +28,7 @@
     margin-left: 40%;
     color: white;
     font-weight: bold;
+    margin-top: 5%;
   }
 </style>
 
@@ -61,9 +62,9 @@
 
           <div class="container">
             <label class="form-label" for="doa">Nom_proprietaire</label>
-            <select class="form-select" style="color: #41A7A5" aria-label="Default select example" name="id_proprietaire">
+            <select class="form-select" style="color: black" aria-label="Default select example" name="id_proprietaire">
             @foreach ($proprietaires as $proprietaire)
-                <option value="{{$proprietaire->id}}">{{$proprietaire->prenom}}</option>
+                <option value="{{$proprietaire->id}}">{{$proprietaire->prenom}} {{$proprietaire->nom}}</option>
             @endforeach
             </select>
           </div>
